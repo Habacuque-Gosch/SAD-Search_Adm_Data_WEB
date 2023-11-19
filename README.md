@@ -11,15 +11,15 @@ O SAD(Search Admin Data) é uma ferramenta avançada e eficaz para profissionais
  
 ## Funcionalidades
 
-:heavy_check_mark: `Funcionalidade 1:` Login
+:heavy_check_mark: `Funcionalidade 1:` Extrair dados detalhado de um CNPJ
 
-:heavy_check_mark: `Funcionalidade 2:` Cadastro
+:heavy_check_mark: `Funcionalidade 2:` Consulta do cartão CNPJ
 
-:heavy_check_mark: `Funcionalidade 3:` Extrair dados detalhado de um CNPJ
+:heavy_check_mark: `Funcionalidade 3:` Consulta do Sintegra
 
-:heavy_check_mark: `Funcionalidade 4:` Envio de dados por email
+:heavy_check_mark: `Funcionalidade 4:` Consulta do CNEP
 
-:heavy_check_mark: `Funcionalidade 5:` Trocar a foto de usuário
+:heavy_check_mark: `Funcionalidade 5:` Consulta do certificado de regularidade do FGTS
         
 <video width="420" height="340" controls="controls">
     <source src="./filme.mp4" type="video/mp4">
