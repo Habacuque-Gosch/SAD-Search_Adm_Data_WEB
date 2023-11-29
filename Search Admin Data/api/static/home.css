@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Krona+One&display=swap');
+
+
+:root {
+    --destaque: #00B1FD;
+    --texto: #F2F2DD;
+    --white: #ffffff;
+    --fundo-header: #407BFF;    
+}
+
+/* HEADER INICIO */
+.header-home {
+    background-color: var(--fundo-header);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 95px;
+}
+
+.logo-home {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    color: white;
+    margin-left: 2.81em;
+    user-select:none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.nome-logo-home {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Archivo', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.linha-header {
+    background-color: #e8eeee;
+    height: 1px;
+    display: none;
+}
+
+/* DIV QUE CONTÉM O CONTEXTO E INPUT DE INICIO */
+.inicio {
+    background-color: var(--fundo-header);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+/* O CONTEXTO(H1 e P) E INPUT DE INICIO */
+.contexto-consulta {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -6%;
+}
+/* O TITULO PRINCIPAL DE INICIO(H1) */
+.titulo-principal {
+    color: #F2F2DD;
+    width: 1250px;
+    font-size: 45px;
+    font-family: 'Archivo', sans-serif;
+    text-align: center
+}
+/* DIV QUE CONTÉM O SUBTITULO E INPUT DE INICIO */
+.consulta-entrada-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+    gap: 2.5em;
+    height: 150px;
+}
+/* O TEXTO(P) SUBTITULO */
+.contexto {
+    color: #F2F2DD;
+    font-size: 22px;
+    font-family: 'Archivo', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: 700px;
+}
+/* FORMS DE ENTRADA DE CNPJ(INPUT) */
+form {
+    display: flex;
+    align-items: column;
+    justify-content: center;
+    flex-direction: row;
+}
+/* INPUT */
+.entrada-cnpj-home {
+    font-family: 'Archivo', sans-serif;
+    outline: unset;
+    font-size: 18px;
+    padding: 8px 15px; 
+    width: 690px;
+    height: 50px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+}
+/* IMAGEM DO BOTÃO DO INPUT(TYPE: SUBMIT) */
+.search-img-home {
+    background-color: #2966DD;
+    height:50px;
+    width: 80px;
+    padding: 6px;
+    border-radius: 0px 4px 4px 0px;
+}
+/* DIV DAS EMPRESAS MAIS BUSCADAS */
+.empresas-mais-buscadas {
+    background-color: #e8eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6%;
+}
+/* TITULO PRINCIPAL(H1) DAS EMPRESAS MAIS BUSCADAS */
+.empresas-mais-buscadas-titulo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+    color: rgb(73, 72, 72);
+}
+/* DIV CONTENDO OS NOME DAS EMPRESAS MAIS BUSCADAS */
+.empresas-buscadas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 4em;
+    margin-top: 3em
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    color: #484242;
+}
+/* DIV CONTENDO A PRIMEIRA COLUNA COM OS NOME DAS EMPRESAS MAIS BUSCADAS */
+.empresas-buscadas-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6em;
+}
+/* DIV CONTENDO A SEGUNDA COLUNA COM OS NOME DAS EMPRESAS MAIS BUSCADAS */
+.empresas-buscadas-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6em;
+}
+/* DIV CONTENDO A TERCEIRA COLUNA COM OS NOME DAS EMPRESAS MAIS BUSCADAS */
+.empresas-buscadas-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6em;
+}
+/* DIV CONTENDO A QUARTA COLUNA COM OS NOME DAS EMPRESAS MAIS BUSCADAS */
+.empresas-buscadas-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6em;
+}
+
+
+@media (max-width: 420px) {
+    .inicio {
+        gap: 0em;
+    }
+    .header-home {
+        align-items: left;
+        justify-content: left;
+        flex-direction: row;
+        height: 70px;
+        margin-left: 1em;
+        margin-bottom: 3%;
+    }
+    .logo-home {
+        margin-left: 0em;
+        user-select:none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .linha-header {
+        width: 100%;
+        display: block;
+        
+    }
+}
+
+@media (max-width: 420px) {
+    .titulo-principal {
+        font-size: 26px;
+        width: 300px;
+        height: 60px;
+    }
+    .contexto-consulta {
+        margin-top: 0%;
+        height: 380px;
+        gap: 6em;
+    }
+    .contexto {
+        font-size: 16px;
+        width: 380px;
+        height: 45px;
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 420px) {
+    .entrada-cnpj-home {
+        font-size: 18px;
+        padding: 8px 15px; 
+        width: 260px;
+        height: 35px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    /* IMAGEM DO BOTÃO DO INPUT(TYPE: SUBMIT) */
+    .search-img-home {
+        height:35px;
+        width: 75px;
+        padding: 6px;
+        border-radius: 0px 4px 4px 0px;
+    }
+}
+
+@media (max-width: 420px) {
+    .empresas-mais-buscadas {
+        margin-top: 20%;
+        gap: 1em;
+    }
+    .empresas-mais-buscadas-titulo {
+        font-size: 1.2em;
+        
+    }
+    .empresas-buscadas {
+        margin-top: 2em;
+    }
+    .empresas-buscadas-3 {
+        display: none;
+    }
+    .empresas-buscadas-4 {
+        display: none;
+    }
+}

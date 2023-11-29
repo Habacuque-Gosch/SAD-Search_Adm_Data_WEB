@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Krona+One&display=swap');
+
+:root {
+    --destaque: #00B1FD;
+    --texto: #F2F2DD;
+    --white: #ffffff;
+    --fundo-header: #407BFF;    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: #e8eeee;
+    padding-top: 1em;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 950px;
+    height: 200px;
+    font-weight: 12px;
+}
+
+.texto-footer {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    footer {
+        margin-top: 0px;
+        background-color: #e8eeee;
+    }
+    .footer {
+        margin-top: 0px;
+        width: 350px;
+        height: 400px;
+        font-weight: 12px;
+    }
+    .texto-footer {
+        font-size: 14px;
+        height: 250px;
+        width: 300px;
+        
+    }
+}

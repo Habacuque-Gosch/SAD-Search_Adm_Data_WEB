@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Krona+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root {
+    --destaque: #00B1FD;
+    --texto: #F2F2DD;
+    --white: #ffffff;
+    --fundo-header: #407BFF;
+    --fundo_card: #4A7EF3;
+    --texto-cinza: #676565;
+}
+
+.nome-empresa-resumo {  
+    font-family: 'Poppins', sans-serif;
+    color: #353232;
+    margin-left: 6.25em;
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+
+.resumo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--texto-cinza);
+    gap: 14px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    margin-left: 7.81em;
+}
+.search {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #e8eeee;
+    font-family: 'Archivo', sans-serif;
+    color: rgb(49, 48, 48);
+    width: 800px;
+    height: 100%;
+    gap: 2em;
+    margin-left: 5em;
+}
+
+.titulo-info {
+    color: var(--texto);
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.linha-cartao {
+    margin-left: -5%;
+    margin-bottom: 2%;
+    background-color: #e8eeee;
+    width: 830px;
+    height: 2px;
+}
+
+.info-registro {
+    background-color: var(--fundo_card);
+    display: inline-block;
+    font-family: 'Archivo', sans-serif;
+    text-align: left;
+    margin-left: 7.81em;
+    color: var(--texto);
+    padding-left: 2.5em;
+    padding-bottom: 1em;
+    line-height: 2.5em;
+    border-radius: 12px;
+    width: 830px;
+}
+
+.titulo-info-cep {
+    color: var(--texto);
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.linha-endereco {
+    margin-left: -7%;
+    margin-bottom: 2%;
+    background-color: #e8eeee;
+    width: 655px;
+    height: 2px;
+}
+.info-endereco {
+    background-color: var(--fundo_card);
+    font-family: 'Archivo', sans-serif;
+    text-align: left;
+    color: var(--texto);
+    line-height: 2.0em;
+    padding-left: 2.5em;
+    border-radius: 12px;
+    height: 280px;
+    width: 650px;
+    margin-left: 7.81em;
+
+}
+
+.titulo-info-contato {
+    color: var(--texto);
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.linha-contato {
+    margin-left: -10%;
+    margin-bottom: 2%;
+    background-color: #e8eeee;
+    width: 455px;
+    height: 2px;
+}
+.info-contato {
+    background-color: var(--fundo_card);
+    font-family: 'Archivo', sans-serif;
+    text-align: left;
+    color: var(--texto);
+    line-height: 2.5em;
+    padding-left: 2.5em;
+    border-radius: 12px;
+    height: 160px;
+    width: 450px;
+    margin-left: 7.81em;
+}
+
+.titulo-info-cnae {
+    color: var(--texto);
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.linha-cnae {
+    margin-left: -7%;
+    margin-bottom: 2%;
+    background-color: #e8eeee;
+    width: 655px;
+    height: 2px;
+}
+.info-cnae {
+    background-color: var(--fundo_card);
+    font-family: 'Archivo', sans-serif;
+    text-align: left;
+    color: var(--texto);
+    line-height: 1.5em;
+    padding-left: 2.5em;
+    border-radius: 12px;
+    padding-bottom: 40px;
+    width: 650px;
+    margin-left: 7.81em;
+    margin-bottom: 15%;
+}   
+
+.secao-certidoes-da-empresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    margin-bottom: 15%;
+}
+
+.titulo-certidoes {
+    color: rgb(65, 63, 63);
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.todos-os-cards-certidoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.certidao {
+    background-color: var(--fundo_card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.titulo-card-certidao {
+    color: rgb(216, 208, 208);
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+    width: 150px;
+    text-align: center;
+}
+
+.butao-card-certidao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+@media (max-width: 420px) {
+    .resumo-empresa {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        flex-direction: column;
+        padding-left: 1em;
+        margin-bottom: 5%;
+    }
+
+    .nome-empresa-resumo {  
+        padding-top: 0%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+    .resumo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .search {
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        width: 50vh;
+        height: 100%;
+        gap: 1em;
+        margin-left: 0em;
+    }
+    .linha-cartao {
+        margin-left: -5%;
+        height: 1px;
+        margin-bottom: 1em;
+        width: 360px;
+    }
+    .info-registro {
+        margin-left: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 1em;
+        line-height: 30px;
+        border-radius: 5px;
+        width: 360px;
+    }
+    .linha-endereco {
+        margin-left: -5%;
+        height: 1px;
+        margin-bottom: 1em;
+        width: 360px;
+    }
+    .info-endereco {
+        margin-left: 1em;
+        padding-left: 15px;
+        padding-bottom: 1em;
+        line-height: 30px;
+        border-radius: 5px;
+        width: 360px;
+        height: auto;
+    }
+    .linha-contato {
+        margin-left: -5%;
+        height: 1px;
+        margin-bottom: 1em;
+        width: 360px;
+    }
+    .info-contato {
+        margin-left: 1em;
+        padding-left: 15px;
+        padding-bottom: 1em;
+        line-height: 30px;
+        border-radius: 5px;
+        width: 360px;
+        height: auto;
+    }
+
+    .info-cnae {
+        margin-left: 1em;
+        padding-left: 15px;
+        padding-bottom: 1em;
+        line-height: 30px;
+        border-radius: 5px;
+        width: 360px;
+        height: auto;
+    }
+    .linha-cnae {
+        margin-left: -5%;
+        height: 1px;
+        margin-bottom: 1em;
+        width: 360px;
+    }
+    .info-cnae {
+        margin-left: 1em;
+        padding-left: 15px;
+        padding-bottom: 1em;
+        line-height: 30px;
+        border-radius: 5px;
+        width: 360px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .todos-os-cards-certidoes {
+        flex-direction: column;
+    }
+    .titulo-certidoes {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Krona+One&display=swap');
+
+:root {
+    --destaque: #00B1FD;
+    --texto: #F2F2DD;
+    --white: #ffffff;
+    --fundo-header: #407BFF;
+}
+
+.header {
+    background-color: var(--fundo-header);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 95px;
+    gap: 20em;
+    width: 100%;
+    margin-bottom: 3%;
+    box-shadow: 5px 3px 5px rgb(168, 167, 167);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    color: white;
+    margin-left: 2.81em;
+    user-select:none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.nome-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+form {
+    display: flex;
+    align-items: column;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.entrada-cnpj {
+    font-family: 'Archivo', sans-serif;
+    outline: unset;
+    border:none;    
+    font-size: 16px;
+    padding: 1em; 
+    width: 320px;
+    height: 45px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.search-img {
+    background-color: #2966DD;
+    height:45px;
+    width: 50px;
+    padding: 6px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+@media (max-width: 420px) {
+    .header {
+        align-items: left;
+        justify-content: left;
+        flex-direction: column;
+        height: 140px;
+        gap: 0em;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 5%;
+    }
+    .logo {
+        margin-left: 0em;
+        user-select:none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .entrada-cnpj {
+        font-size: 18px;
+        padding: 8px 15px; 
+        width: 260px;
+        height: 35px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    /* IMAGEM DO BOTÃO DO INPUT(TYPE: SUBMIT) */
+    .search-img {
+        height:35px;
+        width: 75px;
+        padding: 6px;
+        border-radius: 0px 4px 4px 0px;
+    }
+}

@@ -1,0 +1,93 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<div class="inicio">
+    <div class="header-home">
+        <div class="logo-home">
+          <a class="nome-logo-home" href="/">SAD</a>
+          <a href="/"><img src="../static/img/logo.png" width="44px" height="44px" alt="correto"></a>
+        </div>
+    </div>  
+    <div class="linha-header">
+    </div>
+    <div class="contexto-consulta">
+        <h1 class="titulo-principal">Consulte o CNPJ agora mesmo de qualquer empresa do Brasil de forma totalmente gratuita</h1>
+        <div class="consulta-entrada-home">
+            <p class="contexto">Além da consulta gratuita de CNPJ, também te mostraremos o quadro societário, certificado de regularidade do FGTS, Consulta do Sintegra, Consulta do CNEP, cartão CNPJ e muito mais.</p>
+            <form action="/consulta" method="post">
+                <input class="entrada-cnpj-home" type="text" placeholder="Busque pelo CNPJ desejado" name="cnpj" required>
+                <input class="search-img-home" type="image" src="../static/img/icones/lupa.svg" width="30px" height="30px">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="empresas-mais-buscadas">
+    <h2 class="empresas-mais-buscadas-titulo">As empresas mais buscadas: </h2>
+    <div class="empresas-buscadas">
+        <div class="empresas-buscadas-1">
+            <a href="https://nubank.com.br/">Nubank</a>
+            <a href="https://www.americanas.com.br/">Americanas</a>
+            <a href="https://www.mercadopago.com.br/">Mercado pago</a>
+        </div>
+        <div class="empresas-buscadas-2">
+            <a href="https://comunidade.nubank.com.br/">Nu Financeira</a>
+            <a href="https://www.mercadolivre.com.br/">Mercado Livre</a>
+            <a href="https://perfectpay.com.br/">Perfect Pay</a>
+        </div>
+        <div class="empresas-buscadas-3">
+            <a href="https://abrasuaconta.santander.com.br/landing/">Banco Santander</a>
+            <a href="https://www.hostinger.com.br/">Hostinguer</a>
+            <a href="https://www.itau.com.br/">Banco Itáu</a>
+        </div>
+        <div class="empresas-buscadas-4">
+            <a href="https://www.realizesolucoesfinanceiras.com.br/">Realize Crédito</a>
+            <a href="https://www.santander.com.br/hotsite/santanderfinanciamentos/financiamento-entre-particulares.html?utm_urlsuffix=M11514-24606-83&gclid=Cj0KCQiAjMKqBhCgARIsAPDgWlxF5MJfzo1pmg-ziEl-RadcV_iTycxPvX_FhLkxjDA5KtvWiqRlDcwaAha8EALw_wcB&gclsrc=aw.ds">Aymore Crédito</a>
+            <a href="https://www.intelbras.com/pt-br/">Intelbras</a>
+        </div>
+    </div>
+</div>
+<section class="section-perguntas-frequentes">      
+    <h3 class="titulo-perguntas-mais-frequentes">Perguntas frequentes:</h3  >
+    <div class="todas-as-perguntas">
+        <details class="detalhes">
+            <summary class="sumario">O que é e para que serve o CNPJ?</summary>
+            <p class="conteudo-sumario">O Cadastro Nacional de Pessoas Jurídicas (CNPJ)
+                é o número designado pela <a class="links-externos" href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a>  na abertura da empresa. Ele serve
+                para identificar o negócio nos mais diversos tipos de atividades, como a emissão
+                de notas fiscais ou o pagamento dos impostos. </p>
+        </details>
+        <details class="detalhes">
+            <summary class="sumario">Porque fazer a consulta do CNPJ?</summary>
+            <p class="conteudo-sumario">Consultar o CNPJ é um procedimento fundamental para os empresários
+                que desejam identificar se uma organização está ativa.<br>
+                <br>Entre os elementos informados no CNPJ,
+                é possível avaliar a razão social, o nome fantasia, a descrição da atividade da empresa ( <a class="links-externos" href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/cadastur/o-que-e-cnae">CNAE</a>), 
+                o código de natureza jurídica, o endereço e o quadro de sócio e administradores (<a class="links-externos" href="https://www.rs.gov.br/carta-de-servicos/servicos?servico=1657#:~:text=%2D%20QSA%20(Quadro%20de%20S%C3%B3cios%20e,s%C3%B3cios%2C%20conforme%20registrado%20em%20contrato.">QSA</a>). <br> 
+                <br>Esses dados ajudam os empresários a fazer uma seleção mais apurada dos fornecedores. Assim, o negócio diminui os
+                riscos na cadeia de suprimentos e evita fraudes e golpes. <br>
+                <br>Você pode fazer essa pesquisa pelo nosso
+                serviço de Consulta de CNPJ. Em segundos você tem todos os
+                dados em mãos de forma totalmente gratuita.
+                </p>
+        </details>
+        <details class="detalhes">
+            <summary class="sumario">Quais atividades pode-se fazer com a abertura de um CNPJ?</summary>
+            <p class="conteudo-sumario">Com a abertura de um CNPJ, o fornecedor pode fazer diversas atribuições para manter o negócio em dia. Entre eles estão: emissão de notas fiscais, pagamento de tributos, registro de funcionários, abertura de contas bancárias, pegar empréstimos em bancos e participar de licitações públicas.</p>
+        </details>
+        <details class="detalhes">
+            <summary class="sumario">Porque consultar o CNPJ pelo SAD?</summary>
+            <p class="conteudo-sumario">Na Consulta de CNPJ do <a class="links-externos" href="/">SAD</a> nós informamos de forma simples e gratuita todos os dados da Receita Federal de um fornecedor, seus sócios e administradores, além de direcionar para pesquisas de certidões, consultas públicas de sanções, etc. <br>
+            <br>Além disso, outra vantagem do nosso serviço é que você tem acesso aos dados dos sócios das empresas e descobre quais participações esse sócio possui, um recurso que você não encontrará em nenhum outro serviço gratuito.</p>
+        </details>
+        <details class="detalhes">
+            <summary class="sumario">Como consultar um CNPJ?</summary>
+            <p class="conteudo-sumario">Um CNPJ pode ser consultado de diversas formas, mas nós recomendamos o nosso serviço de Consulta CNPJ. Nós somos uma ferramenta gratuita que possibilita a análise de dados relacionados ao fornecedor, como o cartão CNPJ, dados do quadro societário, contato e endereço, sem precisar de qualquer tipo de login. <br>
+            <br>Além disso, ao consultar o CNPJ conosco você pode obter informações como comprovante de Cadastro de Empresas Inidôneas e Suspensas (CEIS), Certidões Negativas de Débitos (CNDs) federais ou estaduais, entre outros dados.</p>
+        </details>
+        <details class="detalhes">
+            <summary class="sumario">Como consultar um CNPJ grátis?</summary>
+            <p class="conteudo-sumario">A Consulta de CNPJ do <a class="links-externos" href="/">SAD</a> traz todas as informações completas sobre a empresa solicitada. <br>
+            <br>Com apenas um clique, nós informamos a situação cadastral, o quadro societário, contato e endereço em apenas uma página e sem custos.</p>
+        </details>
+    </div>
+</section>  
+{% endblock %}  

@@ -1,0 +1,129 @@
+{% extends "template.html" %}
+{% block conteudo %}  
+<div class="header">
+  <div class="logo">
+    <a class="nome-logo" href="/">SAD</a>
+    <a href="/"><img src="../static/img/logo.png" width="44px" height="44px" alt="correto"></a>
+  </div>
+  <div class="consulta-entrada">
+    <form action="/consulta" method="post">
+      <input class="entrada-cnpj" type="text" placeholder="Busque pelo CNPJ desejado" name="cnpj" required>
+      <input class="search-img" type="image" src="../static/img/icones/lupa.svg" width="30px" height="30px">
+    </form>
+  </div>
+</div>
+{% with messages = get_flashed_messages() %}
+{% if messages %} 
+    {% for message in messages %}
+        <div class="alert">
+          <p>{{ message }}</p>
+        </div> 
+    {% endfor %}
+{% endif %}
+{% endwith %}
+<!-- Resumo da empresa -->
+<div class="search">
+  <div class="resumo-empresa">
+    <p class="nome-empresa-resumo"><b>{{nome_empresa}}</b></p>
+    <div class="resumo">
+      <img src="../static/img/icones/maleta.svg" width="20px" height="20px" alt="maleta">
+      <p>CNPJ: {{cnpj_empresa}}</p>
+      <img src="../static/img/icones/predio.svg" width="20px" height="20px" alt="prédio">
+      <p>{{tipo_empresa}}</p>
+    </div>
+  </div>
+  <!-- Card de Cartão de CNPj -->
+  <div class="info-registro">
+      <p class="titulo-info" >Cartão CNPJ</p>
+      <div class="linha-cartao">
+      </div>
+      <p class="texto-info"><b>Razão social: </b>{{nome_empresa}}</p>
+      <p><b>Nome fantasia: </b>{{nome_fantasia}}</p>
+      <p><b>Tipo: </b>{{tipo_empresa}}</p>
+      <p><b>Data de abertura: </b>{{abertura_empresa}}</p>
+      <p><b>Última atualização: </b>{{ultima_atualizacao}}</p>
+      <p><b>Status: </b>{{status_empresa}}</p>  
+      <p><b>Situação Cadastral: </b>{{situacao_empresa}}</p>
+      <p><b>Natureza jurídica: </b>{{natureza_empresa}}</p> 
+      <p><b>Capital social: </b>{{capital_empresa}}</p>
+      <p><b>Porte(PFB): </b>{{porte_empresa}}</p>
+      <p><b>Presidente: </b>{{presidente_empresa}}</p>
+  </div>
+  <!-- Card de Endereço -->
+  <div class="info-endereco">
+    <p class="titulo-info-cep" >Endereço</p>
+    <div class="linha-endereco">
+    </div>
+      <p class="texto-info-cep"><b>Cep: </b>{{cep_empresa}}</p> 
+      <p><b>Logradouro: </b>{{logradouro_empresa}}</p>
+      <p><b>Complemento: </b>{{complemento_empresa}}</p>
+      <p><b>Bairro: </b>{{bairro_empresa}}</p>
+      <p><b>Cidade: </b>{{cidade_empresa}}</p>
+      <p><b>Estado: </b>{{estado_empresa}}</p>
+  </div>
+  <!-- Card de contato -->
+  <div class="info-contato">
+    <p class="titulo-info-contato" >Contato</p>
+    <div class="linha-contato">
+    </div>
+      <p class="texto-info-cep"><b>Telefone: </b>{{tel_empresa}}</p> 
+      <p><b>E-mail: </b>{{email_empresa}}</p>
+  </div>
+  <div class="info-cnae">
+    <p class="titulo-info-cnae" >CNAE</p>
+    <div class="linha-cnae">
+    </div>
+      <p><b>CNAE principal: </b>{{atividade_principal}}</p></p>
+  </div>
+</div>
+<!-- SESSÃO DE CONSULTA DE CERTIDÕES DAS EMPRESAS -->
+<section class="secao-certidoes-da-empresa">
+  <p class="titulo-certidoes">Certidões da empresa {{nome_fantasia}}</p>
+  <div class="todos-os-cards-certidoes">
+    <div class="certidao">
+      <p class="titulo-card-certidao">Consulta do Cartão CNPJ</p>
+      <a class="butao-card-certidao" href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=">Fazer consulta</a>
+    </div>
+  
+    <div class="certidao">
+      <p class="titulo-card-certidao">Consulta do SINTEGRA</p>
+      <a class="butao-card-certidao" href="https://dfe-portal.svrs.rs.gov.br/NFE/CCC">Fazer consulta</a>
+    </div>
+  
+    <div class="certidao">
+      <p class="titulo-card-certidao">Consulta do CNEP</p>
+      <a class="butao-card-certidao" href="https://portaldatransparencia.gov.br/busca">Fazer consulta</a>
+    </div>
+  
+    <div class="certidao">
+      <p class="titulo-card-certidao">Certificado de Regularidade do FGTS</p>
+      <a class="butao-card-certidao" href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf">Fazer consulta</a>
+    </div>
+  </div>
+</section>
+<section class="section-perguntas-frequentes">      
+  <h3 class="titulo-perguntas-mais-frequentes">Perguntas frequentes:</h3>
+  <div class="todas-as-perguntas">
+    <details class="detalhes">
+      <summary class="sumario">Qual a razão social da empresa {{nome_fantasia}}?</summary>
+      <p class="conteudo-sumario">{{nome_empresa}}</p>
+    </details>
+    <details class="detalhes">
+      <summary class="sumario">Qual o cnpj da empresa {{nome_fantasia}}?</summary>
+      <p class="conteudo-sumario">{{cnpj_empresa}}</p>
+    </details>
+    <details class="detalhes">
+      <summary class="sumario">Qual a data de abertura da empresa {{nome_fantasia}}?</summary>
+      <p class="conteudo-sumario">{{abertura_empresa}}</p>
+    </details>
+    <details class="detalhes">
+      <summary class="sumario">Empresas com situação cadastral são exibidas?</summary>
+      <p class="conteudo-sumario">Não, empresas com situação cadastral baixadas não são exibidas em nosso site. No entanto, mesmo que não apareçam aqui, todas as informações sobre elas permanecem acessíveis a qualquer pessoa no site da <a class="links-externos" href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a></p>
+    </details>
+    <details class="detalhes">
+      <summary class="sumario">Como alterar/atualizar os dados da minha empresa?</summary>
+      <p class="conteudo-sumario">As alterações ou atualizações dos dados cadastrais da empresa devem ser realizadas na Junta Comercial de sua região. Esse site apenas exibe as informações fornecidas pela Receita Federal por meio desse <a class="links-externos" href="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj">Link</a>. Os dados são atualizados pela Receita mensalmente. Se você já fez uma alteração na Junta Comercial, aguarde a Receita publicar os dados atualizados.</p>
+    </details>
+  </div>
+</section>  
+{% endblock %}
